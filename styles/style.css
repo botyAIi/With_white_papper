@@ -1,7 +1,6 @@
-* {
-    font-family: 'Inter';
-}
 body {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
     background-color: #1e1e1e;
     margin: 0;
 }
@@ -21,5 +20,274 @@ blockquote {
 }
 
 .content-section {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    min-height: 100px;
+
+}
+
+.content-section_theme_dark{
+    color: #fff;
+    background-color: #131313;
+}
+
+.content-section_theme_bright{
+    color:#131313;
+    background-color: #7fffd4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 20px;
+}
+
+.header__logo {
+    display: block;
+    width: 75px;
+}
+
+.header__logo-image{
+    width: 100%;
+}
+
+.header__menu{
+    display: block;
+}
+
+.header__menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.header__menu-item a{
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+}
+
+.header__menu-link {
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 1.2;
+} 
+
+.header__menu-item-active .header__menu-link {
+    text-decoration: none;
+} 
+
+.cover {
+    display: flex;
+    padding: 30px 0 30px 21px;
+    background-image: url(../images/cover.svg);
+    background-repeat: no-repeat ;
+    background-size: 95% auto;
+    background-position: right center;
+}
+
+.cover__title {
+    font-size: 72px;
+    font-family: 'EB Garamound', serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    width: 100%;
+}
+
+.accent-span {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.intro{
+    display: flex;
+    padding: 30px 20px;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.intro__title {
+    font-weight: 400;
+    display: flex;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: normal;
+}
+
+.intro__date {
+    white-space: nowrap;
+    color: #ccc;
     
+}
+
+.intro__heading__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__main-text {
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 1.35;
+    font-style: normal;
+    gap: 24px;
+}
+
+.reasons{
+    display: flex;
+    padding: 40px 20px;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.content-section__subtitle {
+    display: block;
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.content-section__introduction{
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+}
+
+.content-section__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    gap: 16px;
+    padding: 0 0 0 10px;
+}
+
+.content-section__list-item{
+    
+}    
+
+.content-section__list-accent{
+    font-weight: 700;
+}
+
+.how-to{
+    padding: 40px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cards-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+    gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+    gap: 8px;
+}
+
+.card_text-only {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.card__title {
+    font-family: 'EB Garamound', serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.card_theme_dark {
+    color: #F5F5F5; 
+    background-color: #343434 ;
+}
+
+.card_theme_bright {
+    color:  #131313;
+    background-color: #fffd7f;
+}
+
+.card__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__author-name {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.card__author-photo {
+    display: block;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__text {
+    font-size: 400;
+}
+
+.footer {
+    box-sizing: border-box;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #fffd7f;
+}
+
+.footer__copy {
+    display: flex;    
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    gap: 16px;  
+}
+.footer__links a {
+    color:#F5F5F5;
+    font-size: 14px;
+    text-decoration: none;
 }
