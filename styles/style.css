@@ -183,7 +183,7 @@ blockquote {
 }
 
 .content-section__list-item{
-    
+    display: block;
 }    
 
 .content-section__list-accent{
