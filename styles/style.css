@@ -65,9 +65,9 @@ blockquote {
 .header__menu-list {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
   list-style: none;
-  justify-content: space-between;
 }
 
 .header__menu-item {
@@ -90,25 +90,25 @@ blockquote {
 }
 
 .cover {
-  inline-size: 100%;
   display: flex;
+  padding: 14px 20px 0;
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 94.5%;
-  padding: 14px 20px 0;
+  inline-size: 100%;
 }
 
 .cover__title {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   width: 100%;
   color: #fff;
-  font-family: 'EB Garamound';
+  font-family: 'EB Garamond';
   font-weight: 400;
-  line-height: 100%;
   font-size: 72px;
-  justify-self: center;
+  line-height: 100%;
 }
 
 .accent-span {
@@ -146,8 +146,8 @@ blockquote {
 
 .intro__date {
   color: #ccc;
-  white-space: nowrap;
   line-height: 120%;
+  white-space: nowrap;
 }
 
 .intro__main-text {
@@ -169,18 +169,18 @@ blockquote {
 
 .content-section__subtitle {
   display: block;
-  font-family: 'EB Garamound';
+  font-family: 'EB Garamond';
   font-weight: 500;
   font-size: 28px;
   line-height: 1.15;
 }
 
 .content-section__introduction {
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 135%;
-  flex-wrap: wrap;
 }
 
 .content-section__list {
@@ -230,7 +230,7 @@ blockquote {
 }
 
 .card__title {
-  font-family: 'EB Garamound';
+  font-family: 'EB Garamond';
   font-weight: 500;
   font-size: 22px;
   line-height: 135%;
@@ -272,7 +272,7 @@ blockquote {
 }
 
 .card__text {
-    line-height: 135%;
+  line-height: 135%;
 }
 
 .footer {
@@ -295,6 +295,7 @@ blockquote {
   gap: 16px;
   list-style: none;
 }
+
 .footer__links a {
   color: #f5f5f5;
   font-size: 14px;
