@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 400;
   background-color: #1e1e1e;
 }
@@ -51,7 +51,7 @@ blockquote {
 
 .header__logo {
   display: block;
-  width: 75px;
+  width: 78.45px;
 }
 
 .header__logo-image {
@@ -67,22 +67,25 @@ blockquote {
   flex-direction: column;
   gap: 12px;
   list-style: none;
+  justify-content: space-between;
 }
 
-.header__menu-item a {
+.header__menu-item {
   color: #f5f5f5;
   font-size: 16px;
   font-style: normal;
-  line-height: 1.2;
+  line-height: 120%;
 }
 
 .header__menu-link {
   color: #f5f5f5;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 120%;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.header__menu-item-active .header__menu-link {
+.header__menu-item-active > .header__menu-link {
   text-decoration: none;
 }
 
@@ -93,16 +96,19 @@ blockquote {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 94.5%;
-  padding: 0 20px;
+  padding: 14px 20px 0;
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   color: #fff;
-  font-family: 'EB Garamound', serif;
+  font-family: 'EB Garamound';
   font-weight: 400;
   line-height: 100%;
   font-size: 72px;
+  justify-self: center;
 }
 
 .accent-span {
@@ -121,7 +127,12 @@ blockquote {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 30px 20px;
+  padding: 30px 20px 37px;
+}
+
+.intro__heading__title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .intro__title {
@@ -130,17 +141,13 @@ blockquote {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
-  line-height: 1.2;
+  line-height: 120%;
 }
 
 .intro__date {
   color: #ccc;
   white-space: nowrap;
-}
-
-.intro__heading__title {
-  display: flex;
-  justify-content: space-between;
+  line-height: 120%;
 }
 
 .intro__main-text {
@@ -150,7 +157,7 @@ blockquote {
   color: #f5f5f5;
   font-size: 16px;
   font-style: normal;
-  line-height: 1.35;
+  line-height: 135%;
 }
 
 .reasons {
@@ -162,32 +169,31 @@ blockquote {
 
 .content-section__subtitle {
   display: block;
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamound';
   font-weight: 500;
   font-size: 28px;
   line-height: 1.15;
 }
 
 .content-section__introduction {
-  display: block;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  line-height: 1.35;
+  line-height: 135%;
+  flex-wrap: wrap;
 }
 
 .content-section__list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 0 0 10px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.35;
+  padding: 0 0 0 16px;
 }
 
 .content-section__list-item {
-  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
 }
 
 .content-section__list-accent {
@@ -224,10 +230,10 @@ blockquote {
 }
 
 .card__title {
-  font-family: 'EB Garamound', serif;
+  font-family: 'EB Garamound';
   font-weight: 500;
   font-size: 22px;
-  line-height: 1.35;
+  line-height: 135%;
 }
 
 .card_theme_dark {
